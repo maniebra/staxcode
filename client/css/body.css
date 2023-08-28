@@ -1,8 +1,10 @@
 @import url("pallete.css");
 @import url("animations.css");
 
+html {
+  height: 100%;
+}
 body {
-  height: max-content;
   background-image: linear-gradient(
     40deg,
     var(--textPrimaryDark) 10%,
@@ -11,7 +13,7 @@ body {
   );
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
   background-color: var(--textPrimaryDark);
   margin: 0;
   padding: 0;
