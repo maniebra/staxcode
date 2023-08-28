@@ -52,7 +52,7 @@
     var(--primaryDark)
   );
   margin-top: -70px;
-  padding: 5%;
+  padding: 2%;
   padding-top: 90px;
   padding-bottom: 20px;
   gap: 5%;
@@ -60,6 +60,7 @@
   color: var(--textLight);
   font-family: "Oxanium", cursive;
   box-shadow: #000 0 0 20px;
+  overflow-x: auto;
 }
 
 .menu {
