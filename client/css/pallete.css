@@ -1,0 +1,33 @@
+:root {
+  --primaryDark: #062547;
+  --primary: #083f70;
+  --primaryLight: #015f9e;
+
+  --accent: #ff6b24;
+  --accentLight: #ffa657;
+
+  --textLight: #f5f5f5;
+  --textDark: #333333;
+  --textMuted: #777777;
+
+  --textPrimaryLight: #aaeeff;
+  --textPrimaryDark: #001133;
+
+  --backgroundLight: #ffffff;
+  --backgroundDark: #f0f2f5;
+  --backgroundAccent: #f8fafc;
+
+  --borderColor: #d1d5db;
+  --dividerColor: #e5e7eb;
+
+  --buttonPrimary: var(--primary);
+  --buttonSecondary: #55acee;
+  --buttonDanger: #e15258;
+  --buttonTextOnDark: var(--textLight);
+  --buttonTextOnLight: var(--textDark);
+
+  --inputBackground: #f8fafc;
+  --inputBorder: #cbd5e0;
+  --inputPlaceholder: #a0aec0;
+  --inputFocusRing: #86b8f3;
+}

@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium&display=swap");
+@import url("pallete.css");
+.header {
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+.title {
+  display: block;
+  position: relative;
+  z-index: 2;
+  background-image: linear-gradient(
+    to right,
+    var(--primaryDark),
+    var(--primary),
+    var(--primaryDark)
+  );
+  color: var(--textLight);
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 12%;
+  overflow: hidden;
+  box-shadow: #000 0 0 20px;
+  border-radius: 0 0 15px 15px;
+}
+
+.title h2 {
+  display: block;
+  position: relative;
+  -webkit-background-clip: text;
+  background-clip: text;
+  letter-spacing: 10px;
+  font-family: "Oxanium", cursive;
+  font-size: 24pt;
+  transition-duration: 300ms;
+}
+.title h2:hover {
+  letter-spacing: 30pt;
+  text-shadow: var(--textLight) 0 0 10px;
+}
+
+.toolbar {
+  z-index: 0;
+  display: flex;
+  position: relative;
+  background-image: radial-gradient(
+    circle,
+    var(--primaryDark),
+    var(--primary),
+    var(--primaryDark)
+  );
+  margin-top: -70px;
+  padding: 90px;
+  padding-bottom: 20px;
+  gap: 5%;
+  border-radius: 0 0 15pt 15pt;
+  color: var(--textLight);
+  font-family: "Oxanium", cursive;
+  box-shadow: #000 0 0 20px;
+}
+
+.menu {
+  display: block;
+}
+
+.toolbar-option {
+  cursor: pointer;
+  color: var(--textLight);
+  transition-duration: 300ms;
+  text-decoration: none;
+}
+
+.toolbar-option:hover {
+  text-shadow: var(--primaryLight) 0 0 10px;
+  letter-spacing: 3pt;
+  color: var(--textPrimaryLight);
+}

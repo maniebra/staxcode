@@ -1,0 +1,17 @@
+@import url(pallete.css);
+
+@keyframes appear-1 {
+  0% {
+    opacity: 10%;
+    color: var(--textPrimaryLight);
+    filter: blur(3px);
+    margin-left: -50px;
+    transform: rotateX(90deg);
+    transform-origin: 0;
+  }
+  100% {
+    opacity: 100%;
+    filter: none;
+    transform: rotateX(0deg);
+  }
+}
