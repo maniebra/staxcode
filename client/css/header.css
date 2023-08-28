@@ -37,7 +37,7 @@
   transition-duration: 300ms;
 }
 .title h2:hover {
-  letter-spacing: 30pt;
+  letter-spacing: 15px;
   text-shadow: var(--textLight) 0 0 10px;
 }
 
