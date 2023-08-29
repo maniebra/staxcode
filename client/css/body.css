@@ -48,3 +48,47 @@ h3:hover {
   font-weight: 900;
   letter-spacing: 3pt;
 }
+
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  z-index: 5;
+  font-size: 20pt;
+  gap: 10px;
+  height: 100%;
+  width: 50%;
+  background-image: linear-gradient(
+    40deg,
+    var(--textPrimaryDark) 10%,
+    var(--primaryDark) 40%,
+    var(--textPrimaryDark) 100%
+  );
+  padding: 10%;
+  padding-top: 20%;
+  border-radius: 0 15px 15px 0;
+  font-family: "Oxanium", cursive;
+  box-shadow: #00000099 0 0 600px 300px;
+}
+
+.burger-menu button {
+  cursor: pointer;
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  z-index: 6;
+  top: 0;
+  left: 0;
+  margin: 7%;
+  background-color: transparent;
+  border: transparent;
+  color: var(--textLight);
+  transition-duration: 300ms;
+  scale: 1.25;
+}
+
+.burger-menu button:hover {
+  filter: hue-rotate(25deg);
+  scale: 1.5;
+}

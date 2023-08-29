@@ -8,16 +8,29 @@
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/body.css" />
     <link rel="stylesheet" href="../css/animations.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"
-    />
   </head>
   <body>
+    <div class="burger-menu" id="burger-menu">
+      <button onclick="closeBurgerMenu()">
+        <img
+        src="../icons/close.svg" style="width: 32px;height: 32px;"
+      >
+      </button>
+      <a href="#" class="toolbar-option">Home</a>
+      <a href="#" class="toolbar-option">Courses</a>
+      <a href="#" class="toolbar-option">Problemset</a>
+      <a href="#" class="toolbar-option">Contribute</a>
+      <a href="#" class="toolbar-option">FAQ</a>
+      <a href="#" class="toolbar-option">About</a>
+    </div>
     <div class="header">
       <div class="title">
-        <button id="burger-menu-button">
-          <span class="material-symbols-rounded"> menu </span>
+        <button id="burger-menu-button" onclick="openBurgerMenu()">
+          <img
+            src="../icons/menu.svg"
+          >
+
+          </i>
         </button>
         <h2>STAXCODE</h2>
       </div>

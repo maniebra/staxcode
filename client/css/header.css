@@ -55,7 +55,7 @@
     var(--primaryDark)
   );
   margin-top: -70px;
-  padding: 2%;
+  padding: 5%;
   padding-top: 90px;
   padding-bottom: 20px;
   gap: 5%;
@@ -85,6 +85,7 @@
 
 #burger-menu-button {
   display: block;
+  z-index: 4;
   position: relative;
   background-color: transparent;
   border: 0px;
@@ -92,12 +93,22 @@
   margin-top: auto;
   margin-bottom: auto;
   transition-duration: 300ms;
+  cursor: pointer;
+  scale: 1.5;
+  overflow: hidden;
+}
+
+#burger-menu-button object {
+  display: inline;
+  z-index: 3;
+  position: relative;
 }
 
 #burger-menu-button:hover {
-  color: var(--textLight);
+  color: var(--textPrimaryLight);
   border-radius: 25px;
   padding: 10px;
-  scale: 1.25;
+  scale: 1.6;
   cursor: pointer;
+  text-shadow: var(--textPrimaryLight) 0 0 20px;
 }
