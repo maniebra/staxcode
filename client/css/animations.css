@@ -16,6 +16,28 @@
   }
 }
 
+@keyframes popup {
+  0% {
+    opacity: 0%;
+    filter: blur(3px);
+  }
+  100% {
+    opacity: 100%;
+    filter: none;
+  }
+}
+
+@keyframes popup-close {
+  0% {
+    opacity: 100%;
+    filter: none;
+  }
+  100% {
+    opacity: 0%;
+    filter: blur(3px);
+  }
+}
+
 @keyframes burger-menu-anim-in {
   0% {
     box-shadow: #00000000 0 0 600px 300px;

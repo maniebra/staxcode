@@ -7,7 +7,7 @@ function handlePageSize() {
 
   document.body.style.height = `${pageHeight}px`;
 
-  if (pageWidth < 600) {
+  if (pageWidth < 700) {
     burgerButton.style.display = "block";
     toolbar.style.display = "none";
   } else {

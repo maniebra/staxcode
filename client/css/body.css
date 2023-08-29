@@ -51,3 +51,98 @@ h3:hover {
 .courses {
   display: grid;
 }
+#popup {
+  display: none; /* Hidden by default */
+  z-index: 11;
+}
+.popup {
+  font-family: "Oxanium", cursive;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 40px;
+  z-index: 12;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 70%;
+  height: max-content;
+  border-radius: 25px;
+  background-color: var(--primary);
+  color: var(--textLight);
+  box-shadow: #000 0 0 20px;
+}
+#close {
+  cursor: pointer;
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  z-index: 6;
+  top: 0;
+  left: 0;
+  margin: 25px;
+  background-color: transparent;
+  border: transparent;
+  color: var(--textLight);
+  transition-duration: 300ms;
+  scale: 1.25;
+}
+.popup-section {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #00000077;
+  backdrop-filter: blur(10px);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+form label {
+  margin-top: 20px;
+}
+form button {
+  color: var(--textLight);
+  background-color: var(--accent);
+  border: 0;
+  border-radius: 999cm;
+  padding: 15px;
+  font-size: 16pt;
+  cursor: pointer;
+  margin: 25%;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+form button:hover {
+  background-color: var(--accentLight);
+}
+
+form input {
+  border: 0;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 5px;
+  background-color: var(--primaryDark);
+  color: var(--textLight);
+  transition-duration: 300ms;
+}
+form input:focus {
+  border-style: solid;
+  border-width: 2px;
+  padding: 8px;
+  border-color: var(--textPrimaryLight);
+  outline: none;
+}
+.popup h2 {
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: 3pt;
+}

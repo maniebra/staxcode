@@ -22,6 +22,9 @@
       <a href="#" class="toolbar-option">Contribute</a>
       <a href="#" class="toolbar-option">FAQ</a>
       <a href="#" class="toolbar-option">About</a>
+      <div id="profile" style="display: flex;margin-top: 20%;gap:5%;">
+        <a href="#" class="toolbar-option" onclick="showLoginUI()">Login</a>
+      </div>
     </div>
     <div class="header">
       <div class="title">
@@ -42,9 +45,23 @@
           <a href="#" class="toolbar-option">Contribute</a>
           <a href="#" class="toolbar-option">FAQ</a>
           <a href="#" class="toolbar-option">About</a>
+          <div id="profile" style="display: flex;position: absolute;right: 5%;gap:5%;">
+            <a href="#" class="toolbar-option" onclick="showLoginUI()">Login</a>
+          </div>
         </div>
       </div>
     </div>
+    <div class="popup-section" id="popup">
+      
+    <div class="popup" id="content-popup" >
+      <button onclick="closePopUp()" id="close" class="close">
+        <img
+        src="../icons/close.svg" style="width: 32px;height: 32px;"
+      ></button>
+      
+      </form>
+    </div>
+  </div>
     <div class="content">
       <div class="content-box">
         <div id="welcome">
@@ -63,5 +80,6 @@
       </div>
     </div>
     <script src="../js/responsive.js"></script>
+    <script src="../js/ui.js"></script>
   </body>
 </html>
