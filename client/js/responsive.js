@@ -1,6 +1,6 @@
 function handlePageSize() {
   var burgerButton = document.getElementById("burger-menu-button");
-
+  var burgerMenu = document.getElementById("burger-menu");
   var toolbar = document.getElementById("toolbar");
   var pageWidth = window.innerWidth;
   var pageHeight = window.innerHeight;
@@ -11,6 +11,7 @@ function handlePageSize() {
     burgerButton.style.display = "block";
     toolbar.style.display = "none";
   } else {
+    burgerMenu.style.display = "none";
     burgerButton.style.display = "none";
     toolbar.style.display = "flex";
   }
