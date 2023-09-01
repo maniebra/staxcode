@@ -41,8 +41,9 @@ function showLoginUI(animate) {
     <input type="password" id="login-password" name="login-password" required>
     
     <button type="submit">Login</button>
+    <a href="#" onclick="showRegisterUI()" style="text-align: center;">Register</a>
     </form>
-    <a href="#" onclick="showRegisterUI()" style="text-align: center;">Register</a>`,
+    `,
     animate
   );
 }
