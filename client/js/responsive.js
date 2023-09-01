@@ -37,7 +37,7 @@ function closeBurgerMenu() {
   }, 600);
 }
 
-window.onload = function () {
+window.addEventListener("load", function () {
   handlePageSize();
   window.addEventListener("resize", handlePageSize);
-};
+});
